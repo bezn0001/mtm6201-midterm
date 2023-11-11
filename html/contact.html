@@ -10,38 +10,92 @@
 
 <body>
     <header>
+        <div class="skip-links">
+            <ul>
+                <li><a aria-label="Skip to Hero section" href="#content">Skip to main content</a></li>
+
+            </ul>
+        </div>
         <div class="wrapper">
             <a href="index.html">
                 <img id="logo" src="/images/logo.png" alt="logo" width="160" height="50"></a>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <ul>
+                    <li>
+
+                        <a aria-label="Go to home page" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a aria-label="Go to about page" href="about.html">About</a>
+
+                    </li>
+                    <li>
+                        <a aria-label="Go to contact page" href="contact.html">Contact</a>
+
+                    </li>
+
+                </ul>
             </nav>
         </div>
     </header>
     <main>
         <section class="contacts">
-            <div class="wrapper">
-                <h2>Our Bakery</h2>
-                <div><img src="/images/bakery.png" alt="bakery" width="689" height="452">
-                    <p>Our address:
-                        231 Elgin St, Ottawa, ON K2P 1L6</p>
-                    <p> Contact us:
+            <div class="flex-container">
+                <div class="image">
+                    <picture>
+                        <source srcset="../images/bakery-320_x_210.png" media="(max-width: 390px)">
+                        <source srcset="../images/bakery-720_x_472.png" media="(max-width: 768px)">
+                        <source srcset="../images/bakery.png" media="(min-width: 1024px)">
+                        <img src="../images/bakery-720_x_472.png" alt="bakery">
+                    </picture>
+                </div>
+                <div class="text">
+                    <h1>Our Bakery</h1>
+                    <p>Our address:<br />
+                        231 Elgin St, Ottawa,ON K2P 1L6</p>
+                    <p> Contact us:<br />
                         250-360-0311</p>
-                    <p>Open hours:
-                        Mon — Sat
-                        9AM — 6PM</p>
+                    <p>Open hours:<br />
+                        <span class="margin-right">Mon — Sat</span>
+                        9AM — 6PM
+                    </p>
                 </div>
             </div>
+        </section>
+        <section class="subscription">
+            <div class="wrapper">
+                <div class="subscription-form">
+                    <h3>Subscribe to our news</h3>
+                    <div class="subscription-flex">
+                        <form action="#" method="post">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <button class="subscribe" type="submit">Subscribe</button>
+                        </form>
+                        <div class="social-icons">
+                            <a aria-label="Go to instagram page" id="instagram" href="#"><img
+                                    src="../images/instagram.svg" alt="Instagram"></a>
+                            <a aria-label="Go to facebook page" id="facebook" href="#"><img src="../images/facebook.svg"
+                                    alt="Facebook"></a>
+                            <a aria-label="Go to linkedin page" id="linkedin" href="#"><img src="../images/linkedin.svg"
+                                    alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
         </section>
     </main>
     <footer>
         <div class="wrapper">
-            <div>
-                <p>231 Elgin St, Ottawa, ON K2P 1L6</p>
-                <p>info@deliziosa.com</p>
-                <p>+1 250-360-0311</p>
+            <div itemscope itemtype="https://schema.org/Organization">
+                <p itemscope itemtype="https://schema.org/PostalAddress"> <span itemprop="streetAddress">231 Elgin
+                        St,</span> <span itemprop="addressCountry"> Ottawa </span>,
+                    <span itemprop="addressLocality"> ON </span> <span itemprop="postalCode"> K2P 1L6</span>
+                </p>
+                <p itemprop="email">info@deliziosa.com</p>
+                <p itemprop="telephone">+1 250-360-0311</p>
             </div>
             <div>
                 <p>© DeliZiosa 2023</p>
