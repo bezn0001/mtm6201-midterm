@@ -10,52 +10,111 @@
 
 <body>
     <header>
+        <div class="skip-links">
+            <ul>
+                <li><a aria-label="Skip to Hero section" href="#content">Skip to main content</a></li>
+
+            </ul>
+        </div>
         <div class="wrapper">
             <a href="index.html">
                 <img id="logo" src="/images/logo.png" alt="logo" width="160" height="50"></a>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <ul>
+                    <li>
+
+                        <a aria-label="Go to home page" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a aria-label="Go to about page" href="about.html">About</a>
+
+                    </li>
+                    <li>
+                        <a aria-label="Go to contact page" href="contact.html">Contact</a>
+
+                    </li>
+
+                </ul>
             </nav>
         </div>
     </header>
     <main>
         <section class="about-us">
             <div class="wrapper">
-                <h1>About</h1>
                 <div class="flex-container">
-                    <img src="/images/about-us.jpg" alt="bread" width="560" height="562">
+                    <div class="image">
+                        <picture>
+                            <source srcset="../images/about-us-320_x_321.png" media="(max-width: 390px)">
+                            <source srcset="../images/about-us-720_x_722.png" media="(max-width: 768px)">
+                            <source srcset="../images/about-us.png" media="(min-width: 1024px)">
+                            <img src="../images/about-us-720_x_722.png" alt="bread">
+                        </picture>
+                    </div>
                     <div class="text">
-                        <p>At the heart of Ottawa, nestled in a cozy corner
-                            of the city, lies a hidden gem that delights the senses and warms the soul - Deliziosa, your
-                            small,
-                            local bakery. With a passion for crafting exceptional baked goods, we have been serving the
-                            Ottawa
-                            community with love and dedication for over a decade.
-                        </p>
-                        <p>We believe in the power of local ingredients, and we source as many of our supplies as
-                            possible
-                            from
-                            Ottawa's very own farmers and producers. It's our way of supporting the community that has
-                            embraced
-                            us
-                            so warmly. Deliziosa's offerings draw from the rich tapestry of global cuisine, ensuring you
-                            get
-                            a
-                            taste
-                            of the world right here in Ottawa.</p>
+                        <h1>About</h1>
+                        <div class="paragraphs">
+
+                            <p>At the heart of Ottawa, nestled in a cozy corner
+                                of the city, lies a hidden gem that delights the senses and warms the soul - Deliziosa,
+                                your
+                                small,
+                                local bakery. With a passion for crafting exceptional baked goods, we have been serving
+                                the
+                                Ottawa
+                                community with love and dedication for over a decade.
+                            </p>
+                            <p>We believe in the power of local ingredients, and we source as many of our supplies as
+                                possible
+                                from
+                                Ottawa's very own farmers and producers. It's our way of supporting the community that
+                                has
+                                embraced
+                                us
+                                so warmly. Deliziosa's offerings draw from the rich tapestry of global cuisine, ensuring
+                                you
+                                get
+                                a
+                                taste
+                                of the world right here in Ottawa.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="subscription">
+            <div class="wrapper">
+                <div class="subscription-form">
+                    <h3>Subscribe to our news</h3>
+                    <div class="subscription-flex">
+                        <form action="#" method="post">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <button class="subscribe" type="submit">Subscribe</button>
+                        </form>
+                        <div class="social-icons">
+                            <a aria-label="Go to instagram page" id="instagram" href="#"><img
+                                    src="../images/instagram.svg" alt="Instagram"></a>
+                            <a aria-label="Go to facebook page" id="facebook" href="#"><img src="../images/facebook.svg"
+                                    alt="Facebook"></a>
+                            <a aria-label="Go to linkedin page" id="linkedin" href="#"><img src="../images/linkedin.svg"
+                                    alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
     </main>
     <footer>
         <div class="wrapper">
-            <div>
-                <p>231 Elgin St, Ottawa, ON K2P 1L6</p>
-                <p>info@deliziosa.com</p>
-                <p>+1 250-360-0311</p>
+            <div itemscope itemtype="https://schema.org/Organization">
+                <p itemscope itemtype="https://schema.org/PostalAddress"> <span itemprop="streetAddress">231 Elgin
+                        St,</span> <span itemprop="addressCountry"> Ottawa </span>,
+                    <span itemprop="addressLocality"> ON </span> <span itemprop="postalCode"> K2P 1L6</span>
+                </p>
+                <p itemprop="email">info@deliziosa.com</p>
+                <p itemprop="telephone">+1 250-360-0311</p>
             </div>
             <div>
                 <p>© DeliZiosa 2023</p>
