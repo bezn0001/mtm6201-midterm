@@ -12,40 +12,78 @@
     <!-- <div class="wrapper"> -->
 
     <header>
-        <div class="wrapper">
+        <div class="skip-links">
+            <ul>
+                <li><a aria-label="Skip to Hero section" href="#content">Skip to main content</a></li>
 
+            </ul>
+        </div>
+        <div class="wrapper">
             <a href="index.html">
-                <img id="logo" src="../images/logo.png" alt="logo" width="160" height="50"></a>
+                <img id="logo" src="/images/logo.png" alt="logo" width="160" height="50"></a>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <ul>
+                    <li>
+
+                        <a aria-label="Go to home page" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a aria-label="Go to about page" href="about.html">About</a>
+
+                    </li>
+                    <li>
+                        <a aria-label="Go to contact page" href="contact.html">Contact</a>
+
+                    </li>
+
+                </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section>
+        <section id="content">
             <div class="wrapper">
 
                 <h1>What is your mood today?</h1>
                 <span class="line"></span>
-                <img id="croissant" src="../images/mane.png" alt="croissant" width="690" height="420">
+                <picture>
+                    <source srcset="../images/mane-320_x_191.png" media="(max-width: 390px)">
+                    <source srcset="../images/mane-720_x_432.png" media="(max-width: 768px)">
+                    <source srcset="../images/mane.png" media="(min-width: 1024px)">
+                    <img id="croissant" src="../images/mane-720_x_432.png" alt="croissant">
+                </picture>
             </div>
         </section>
         <section class="flavors">
             <div class="wrapper">
                 <h2>A flavor for every mood</h2>
                 <div class="grid-container">
-                    <div><img src="../images/macoroon1.png" alt="macoroon1" width="270" height="241">
+                    <div>
+                        <picture>
+                            <source srcset="../images/macoroon1-320_x_261.png" media="(max-width: 390px)">
+                            <source srcset="../images/macoroon1-720_x_587.png" media="(max-width: 768px)">
+                            <source srcset="../images/macoroon1.png" media="(min-width: 1024px)">
+                            <img src="../images/macoroon1-720_x_587.png" alt="macoroon1">
+                        </picture>
                         <p>Cozy Caramel Embrace</p>
                         <button class="add-to-cart">Add to cart</button>
                     </div>
 
-                    <div><img src="../images/macoroon2.png" alt="macoroon2" width="270" height="241">
+                    <div> <picture>
+                        <source srcset="../images/macoroon2-320_x_257.png" media="(max-width: 390px)">
+                        <source srcset="../images/macoroon2-720_x_578.png" media="(max-width: 768px)">
+                        <source srcset="../images/macoroon2.png" media="(min-width: 1024px)">
+                        <img src="../images/macoroon2-720_x_578.png" alt="macoroon2">
+                    </picture>
                         <p>Dreamy Watermelon Delight</p>
                         <button class="add-to-cart">Add to cart</button>
                     </div>
-                    <div><img src="../images/macoroon3.png" alt="macoroon3" width="270" height="241">
+                    <div><picture>
+                        <source srcset="../images/macoroon3-320_x_285.png" media="(max-width: 390px)">
+                        <source srcset="../images/macoroon3-720_x_642.png" media="(max-width: 768px)">
+                        <source srcset="../images/macoroon3.png" media="(min-width: 1024px)">
+                        <img src="../images/macoroon3-720_x_642.png" alt="macoroon3">
+                    </picture>
                         <p>Uplifting Mango Tango</p>
                         <button class="add-to-cart">Add to cart</button>
                     </div>
@@ -62,9 +100,12 @@
                             <button class="subscribe" type="submit">Subscribe</button>
                         </form>
                         <div class="social-icons">
-                            <a href="#"><img src="../images/instagram.svg" alt="Instagram"></a>
-                            <a href="#"><img src="../images/facebook.svg" alt="Facebook"></a>
-                            <a href="#"><img src="../images/linkedin.svg" alt="LinkedIn"></a>
+                            <a aria-label="Go to instagram page" id="instagram" href="#"><img
+                                    src="../images/instagram.svg" alt="Instagram"></a>
+                            <a aria-label="Go to facebook page" id="facebook" href="#"><img src="../images/facebook.svg"
+                                    alt="Facebook"></a>
+                            <a aria-label="Go to linkedin page" id="linkedin" href="#"><img src="../images/linkedin.svg"
+                                    alt="LinkedIn"></a>
                         </div>
                     </div>
                 </div>
@@ -75,10 +116,13 @@
 
     <footer>
         <div class="wrapper">
-            <div>
-                <p>231 Elgin St, Ottawa, ON K2P 1L6</p>
-                <p>info@deliziosa.com</p>
-                <p>+1 250-360-0311</p>
+            <div itemscope itemtype="https://schema.org/Organization">
+                <p itemscope itemtype="https://schema.org/PostalAddress"> <span itemprop="streetAddress">231 Elgin
+                        St,</span> <span itemprop="addressCountry"> Ottawa </span>,
+                    <span itemprop="addressLocality"> ON </span> <span itemprop="postalCode"> K2P 1L6</span>
+                </p>
+                <p itemprop="email">info@deliziosa.com</p>
+                <p itemprop="telephone">+1 250-360-0311</p>
             </div>
             <div>
                 <p>© DeliZiosa 2023</p>
@@ -86,7 +130,6 @@
         </div>
 
     </footer>
-    <!-- </div> -->
 </body>
 
 </html>
