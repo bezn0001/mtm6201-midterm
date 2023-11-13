@@ -1,3 +1,4 @@
+/* Sets the whole content in the same property*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -149,7 +150,6 @@ section.flavors {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    /* gap: 80px; */
     justify-content: space-between;
     padding-bottom: 7rem;
 }
@@ -340,10 +340,10 @@ footer .wrapper div:nth-child(1) {
 .flex-container .paragraphs {
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
 }
 
 
+/*'p+p' specifically targets the second p element when it directly follows another p element. */
 
 .flex-container p+p {
     margin-top: 2.5rem;
