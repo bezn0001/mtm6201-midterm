@@ -9,22 +9,22 @@
 </head>
 
 <body>
-    <!-- <div class="wrapper"> -->
 
     <header>
         <div class="skip-links">
             <ul>
+                <!-- Skip links -->
                 <li><a aria-label="Skip to Hero section" href="#content">Skip to main content</a></li>
 
             </ul>
         </div>
         <div class="wrapper">
             <a href="index.html">
-                <img id="logo" src="/images/logo.png" alt="logo" width="160" height="50"></a>
+                <img id="logo" src="../images/logo.png" alt="logo" width="160" height="50"></a>
             <nav>
                 <ul>
                     <li>
-
+                        <!-- Skip links -->
                         <a aria-label="Go to home page" href="index.html">Home</a>
                     </li>
                     <li>
@@ -46,6 +46,7 @@
 
                 <h1>What is your mood today?</h1>
                 <span class="line"></span>
+                 <!--Responsive images -->
                 <picture>
                     <source srcset="../images/mane-320_x_191.png" media="(max-width: 390px)">
                     <source srcset="../images/mane-720_x_432.png" media="(max-width: 768px)">
@@ -57,8 +58,10 @@
         <section class="flavors">
             <div class="wrapper">
                 <h2>A flavor for every mood</h2>
+                <!-- Puts content in three columns -->
                 <div class="grid-container">
                     <div>
+                        <!--Responsive images -->
                         <picture>
                             <source srcset="../images/macoroon1-320_x_261.png" media="(max-width: 390px)">
                             <source srcset="../images/macoroon1-720_x_587.png" media="(max-width: 768px)">
@@ -69,37 +72,44 @@
                         <button class="add-to-cart">Add to cart</button>
                     </div>
 
-                    <div> <picture>
-                        <source srcset="../images/macoroon2-320_x_257.png" media="(max-width: 390px)">
-                        <source srcset="../images/macoroon2-720_x_578.png" media="(max-width: 768px)">
-                        <source srcset="../images/macoroon2.png" media="(min-width: 1024px)">
-                        <img src="../images/macoroon2-720_x_578.png" alt="macoroon2">
-                    </picture>
+                    <div>
+                        <!--Responsive images -->
+                        <picture>
+                            <source srcset="../images/macoroon2-320_x_257.png" media="(max-width: 390px)">
+                            <source srcset="../images/macoroon2-720_x_578.png" media="(max-width: 768px)">
+                            <source srcset="../images/macoroon2.png" media="(min-width: 1024px)">
+                            <img src="../images/macoroon2-720_x_578.png" alt="macoroon2">
+                        </picture>
                         <p>Dreamy Watermelon Delight</p>
                         <button class="add-to-cart">Add to cart</button>
                     </div>
-                    <div><picture>
-                        <source srcset="../images/macoroon3-320_x_285.png" media="(max-width: 390px)">
-                        <source srcset="../images/macoroon3-720_x_642.png" media="(max-width: 768px)">
-                        <source srcset="../images/macoroon3.png" media="(min-width: 1024px)">
-                        <img src="../images/macoroon3-720_x_642.png" alt="macoroon3">
-                    </picture>
+                    <div>
+                        <!--Responsive images -->
+                        <picture>
+                            <source srcset="../images/macoroon3-320_x_285.png" media="(max-width: 390px)">
+                            <source srcset="../images/macoroon3-720_x_642.png" media="(max-width: 768px)">
+                            <source srcset="../images/macoroon3.png" media="(min-width: 1024px)">
+                            <img src="../images/macoroon3-720_x_642.png" alt="macoroon3">
+                        </picture>
                         <p>Uplifting Mango Tango</p>
                         <button class="add-to-cart">Add to cart</button>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="subscription">
             <div class="wrapper">
                 <div class="subscription-form">
                     <h3>Subscribe to our news</h3>
                     <div class="subscription-flex">
+                        <!-- Puts email input and subscribe button into two columns -->
                         <form action="#" method="post">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
                             <button class="subscribe" type="submit">Subscribe</button>
                         </form>
                         <div class="social-icons">
+                            <!--Skip links -->
                             <a aria-label="Go to instagram page" id="instagram" href="#"><img
                                     src="../images/instagram.svg" alt="Instagram"></a>
                             <a aria-label="Go to facebook page" id="facebook" href="#"><img src="../images/facebook.svg"
@@ -116,6 +126,7 @@
 
     <footer>
         <div class="wrapper">
+             <!--Schema -->
             <div itemscope itemtype="https://schema.org/Organization">
                 <p itemscope itemtype="https://schema.org/PostalAddress"> <span itemprop="streetAddress">231 Elgin
                         St,</span> <span itemprop="addressCountry"> Ottawa </span>,
